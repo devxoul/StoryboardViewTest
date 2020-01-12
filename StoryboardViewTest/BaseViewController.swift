@@ -13,12 +13,12 @@ class BaseViewController: UIViewController {
 
   // MARK: Initializing
 
-  init() {
-    super.init(nibName: nil, bundle: nil)
+  override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
   }
 
-  required convenience init?(coder aDecoder: NSCoder) {
-    self.init()
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
   }
 
 

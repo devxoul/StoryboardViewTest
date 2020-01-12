@@ -16,7 +16,8 @@ class ViewController: UIViewController {
   }
 
   @IBAction func tapButton(_ sender: UIButton) {
-    let testVC = TestViewController()
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let testVC = storyboard.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
     testVC.reactor = TestViewReactor()
     navigationController?.pushViewController(testVC, animated: true)
   }

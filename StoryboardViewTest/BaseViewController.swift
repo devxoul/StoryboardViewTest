@@ -32,6 +32,7 @@ class BaseViewController: UIViewController {
   private(set) var didSetupConstraints = false
 
   override func viewDidLoad() {
+    super.viewDidLoad()
     self.view.setNeedsUpdateConstraints()
   }
 

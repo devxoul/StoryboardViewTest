@@ -59,7 +59,7 @@
         <!--Test View Controller-->
         <scene sceneID="7RZ-8x-uZ5">
             <objects>
-                <viewController id="5br-WO-pO6" customClass="TestViewController" customModule="StoryboardViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestViewController" id="5br-WO-pO6" customClass="TestViewController" customModule="StoryboardViewTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pb6-fK-3XV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
